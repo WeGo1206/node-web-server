@@ -53,6 +53,13 @@ app.get('/bad', (req,res) => {
     errorMessage: 'sorry'
   });
 });
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    welcomeMessage: 'projects'
+    });
+});
+
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
